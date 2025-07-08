@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 24px;
+  width: 1128px;
+  margin: auto;
+}
+.gallery li img {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery li img:hover {
+  transform: scale(1.044);
+  z-index: 10;
+}
+.modal-img {
+  width: 1112px;
+  height: 640px;
+}
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
